@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atlanta based JavaScript development professional - Stephen Hutchens">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='sh-icon.png') }}" />
+
+  <title>Atlanta based JavaScript development professional - Stephen Hutchens</title>
+
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='fontawesome.min.css') }}" />
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand page-scroll" href="#page-top">Stephen Hutchens</a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#about">About</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#examples">Examples</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div> <!-- /.navbar-collapse -->
+  </div> <!-- /.container -->
+</nav>
+
+<header class="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1 class="brand-heading">JavaScript Engineer</h1>
+          <p class="typewriter text-center lead intro-text"></p>
+          <a href="#about" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="container content-section text-center">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>Get to know me</h2>
+      <img src="{{ url_for('static', filename='stephen-hutchens.jpg') }}" alt="Stephen Hutchens" class="img-thumbnail center-block" /><br>
+      <p>I'm Stephen Hutchens, a problem-solving, big-picture thinker who's always ready to tackle your next project.</p>
+      <ul class="list-inline banner-social-buttons">
+        <li>
+          <a href="{{ url_for('static', filename='Stephen-resume-2016.pdf') }}" target="_blank" class="btn btn-default btn-lg">
+            <i class="fa fa-paper-plane fa-fw"></i> <span class="network-name">View Resume</span>
+          </a>
+        </li>
+      </ul><br>
+    </div>
+  </div>
+</section>
+
+<!-- Examples Section -->
+<section id="examples" class="content-section text-center examples">
+  <div class="container">
+    <h2>Some of my work</h2>
+    <hr class="featurette-divider">
+    <div class="browser-window">
+      <div class="location-bar">
+        <div class="location-bar-inner">
+          <div class="pull-left controls">
+            <i class="fa fa-arrow-left" title="back"></i>
+            <i class="fa fa-arrow-right" title="forward"></i>
+            <i class="fa fa-undo" title="refresh"></i>
+          </div>
+          <div class="pull-right location-input">
+            <span class="fake-input">
+              <i class="pull-left fa fa-file-o"></i>
+              <a href="http://m.autotrader.com" target="_blank" class="pull-left">http://m.autotrader.com</a>
+              <a href="http://www.distinguishedpartners.com" target="_blank" class="pull-left hide">http://www.distinguishedpartners.com</a>
+              <i class="pull-right fa fa-star-o"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="pull-left description-panel">
+        <div class="description-container">
+          <h4 class="text-left">Autotrader (mobile) Dunwoody, GA</h4>
+          <label class="pull-left">Technologies used:</label>
+          <ul>
+            <li class="tech-item">XHTML</li>
+            <li class="tech-item">JavaScript</li>
+            <li class="tech-item">jQuery UI (Widget Factory)</li>
+            <li class="tech-item">AJAX</li>
+            <li class="tech-item">CSS3</li>
+            <li class="tech-item">JSF</li>
+          </ul>
+          <p class="text-left">Major overhaul of the filters on the mobile Autotrader experience.</p>
+        </div>
+        <div class="description-container hide">
+          <h4 class="text-left">Distinguished Partners Detroit, MI</h4>
+          <label class="pull-left">Technologies used:</label>
+          <ul>
+            <li class="tech-item">Twitter Bootstrap</li>
+            <li class="tech-item">HTML5</li>
+            <li class="tech-item">LESS/CSS3</li>
+            <li class="tech-item">JavaScript</li>
+            <li class="tech-item">jQuery</li>
+            <li class="tech-item">PHP</li>
+          </ul>
+          <p class="text-left">Created entire marketing site and PHP based messaging system.</p>
+        </div>
+      </div>
+      <div class="pull-right example-panel">
+        <img src="{{ url_for('static', filename='mdot.jpg') }}" class="featurette-image img-responsive" />
+        <img src="{{ url_for('static', filename='distinguished-example.png') }}" class="featurette-image img-responsive hide" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="container content-section text-center">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+      <h2>Let's work together!</h2>
+      <p>Feel free to email me with your project details!</p>
+      <p><a href="mailto:stephenhengineering@gmail.com">stephenhengineering@gmail.com</a></p>
+      <ul class="list-inline banner-social-buttons">
+        <li>
+          <a href="https://twitter.com/StephenHutchens" target="_blank" class="btn btn-default btn-lg">
+            <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/sbrhutchens" target="_blank" class="btn btn-default btn-lg">
+            <i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container text-center">
+    <p>&copy; Stephen Hutchens 2016</p>
+    <p><small>Created with Python/Flask &hearts;</small></p>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='page-easing.min.js') }}"></script>
+<script src="{{ url_for('static', filename='application.min.js') }}"></script>
+<script src="{{ url_for('static', filename='typed.min.js') }}"></script>
+</body>
+</html>
